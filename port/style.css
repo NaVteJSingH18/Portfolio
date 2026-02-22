@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+#container {
+  border: 1px solid #020202;
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 25px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  margin: 20px 0;
+}
+nav:hover {
+  border-radius: 25px;
+  background-color: #1d1c1c36;
+}
+#nav-links {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+#nav-links a {
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+#nav-links a:hover {
+  background-color: oklch(90.598% 0.01091 286.047 / 0.08);
+  border-radius: 12px;
+  color: #ffffff;
+}
+#nav-links a.active {
+  background-color: oklch(90.598% 0.01091 286.047 / 0.08);
+  color: #7c3aed;
+  border-bottom: 2px solid #7c3aed;
+}
+p {
+  margin: 1px;
+  color: gray;
+  padding: 2px;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: oklch(70.5% 0.015 286.067);
+}
+
+#theme-toggle {
+  display: flex;
+  height: 35px;
+  width: 35px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.918);
+  transition: all 0.2s ease;
+  filter: grayscale(100%);
+}
+
+#theme-toggle:hover {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+#hero {
+  border: 1px solid #0a0a0a;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+#hero-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  object-fit: cover;
+}
+#about {
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 20px;
+  border-radius: 25px;
+  border: 1px solid #070707;
+  align-items: center;
+  margin: 20px 0;
+}
+#Projects {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid #000000;
+  padding: 20px;
+  border-radius: 25px;
+  align-items: center;
+  margin: 20px 0;
+}
+#Skills {
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 20px;
+  border-radius: 25px;
+  margin: 20px 0;
+  border: 1px solid #000000;
+}
+#badges {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.badge {
+  background-color: #cab7eb29;
+  border-radius: 12px;
+  font-weight: 500;
+  text-align: center;
+  color: #e5e7eb;
+  padding: 10px 18px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  transition: all 0.1s ease;
+}
+.badge:nth-child(odd):hover {
+  transform: rotate(3deg) scale(1.08);
+}
+.badge:nth-child(even):hover {
+  transform: rotate(-3deg) scale(1.08);
+}

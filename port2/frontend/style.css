@@ -438,12 +438,12 @@ section {
   align-items: center;
   margin-right: 5px;
 }
-.blogs h2,
-p {
+.blogs h2{
   text-align: center;
 }
 .blogs p {
   margin-bottom: 50px;
+  text-align: center;
 }
 .resume {
   border: 1px solid rgb(85, 83, 83);
@@ -453,7 +453,14 @@ p {
   width: 70%;
   border-radius: 20px;
 }
-.inner-resume,
+.inner-resume
+{
+  font-size: 14px;
+  text-align: center;
+  margin: 50px;
+}
+
+.inner-resume
 p {
   font-size: 14px;
   text-align: center;

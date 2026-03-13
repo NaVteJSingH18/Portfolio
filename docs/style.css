@@ -79,14 +79,39 @@ nav:hover {
   background-color: rgb(255, 255, 255);
   transform: scale(1.1);
 }
-#hero img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  filter: grayscale(50%);
-}
+#hero .ns{
+  display:flex;
+  justify-content:center;
+  align-items:center;
 
+  width:120px;
+  height:120px;
+  margin:auto;
+  margin-bottom:20px;
+
+  border-radius:50%;
+
+  font-size:40px;
+  font-weight:bold;
+  font-family:cursive;
+
+  color:rgba(168, 163, 163, 0.432);
+
+  /* sapphire gradient */
+  background: radial-gradient(circle at 30% 30%,
+    #fffefe,
+  #000000 40%,
+  #383b4275 80%);
+
+  /* glass lighting */
+  box-shadow:
+  inset -10px -15px 25px rgba(0,0,0,0.6),
+  inset 10px 10px 20px rgba(255,255,255,0.3),
+  0 10px 25px rgba(7, 7, 7, 0.4);
+
+  text-shadow: 4px 4px 4px rgba(15, 0, 0, 0.977);
+
+}
 h1,
 h2,
 h3 {
@@ -132,6 +157,10 @@ p {
   height: 40px;
   border-radius: 10px;
 }
+.btn  :hover{
+  color: white;
+background-color: rgba(207, 193, 193, 0.591);
+}
 .btn-2 {
   width: 100%;
   display: flex;
@@ -147,6 +176,9 @@ p {
 
   height: 40px;
   border-radius: 10px;
+}
+.btn-2  :hover{
+background-color: rgba(207, 193, 193, 0.107);
 }
 .btn-2 button svg{
   align-items: center;
@@ -238,7 +270,7 @@ p {
   font-weight: bold;
   font-weight: 200px;
   font-size: 11px;
-  border: 1px solid #ffffff;
+
   border-radius: 5px;
 
   justify-content: center;
@@ -246,6 +278,10 @@ p {
   background-color: #a3a1a1e6;
   color: black;
   white-space: nowrap;
+}
+.inner-i:hover{
+
+  background-color:white;
 }
 .skill-card h4 {
   margin-bottom: 30px;
@@ -327,11 +363,14 @@ section {
   border: none;
   border-radius: 5px;
   width: 30px;
+  
   padding: 2px;
   padding-top: 5px;
   background-color: #aca9a9;
 }
-
+.project-btn :hover{  
+  background-color: white
+}
 .small-badges {
   display: flex;
   margin-left: 10px;

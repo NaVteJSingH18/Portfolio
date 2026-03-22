@@ -39,7 +39,6 @@ nav:hover {
 #nav-links {
   gap: 40px;
   display: flex;
-
   align-items: center;
 }
 .navs {
@@ -74,7 +73,6 @@ nav:hover {
   transition: all 0.2s ease;
   filter: grayscale(100%);
 }
-
 #theme-toggle:hover {
   background-color: rgb(255, 255, 255);
   transform: scale(1.1);
@@ -83,34 +81,21 @@ nav:hover {
   display:flex;
   justify-content:center;
   align-items:center;
-
   width:120px;
   height:120px;
   margin:auto;
   margin-bottom:20px;
-
   border-radius:50%;
-
   font-size:40px;
   font-weight:bold;
   font-family:cursive;
-
   color:rgba(168, 163, 163, 0.432);
-
-  /* sapphire gradient */
-  background: radial-gradient(circle at 30% 30%,
-    #fffefe,
-  #000000 40%,
-  #383b4275 80%);
-
-  /* glass lighting */
+  background: radial-gradient(circle at 30% 30%, #fffefe, #000000 40%, #383b4275 80%);
   box-shadow:
   inset -10px -15px 25px rgba(0,0,0,0.6),
   inset 10px 10px 20px rgba(255,255,255,0.3),
   0 10px 25px rgba(7, 7, 7, 0.4);
-
   text-shadow: 4px 4px 4px rgba(15, 0, 0, 0.977);
-
 }
 h1,
 h2,
@@ -143,7 +128,6 @@ p {
   justify-content: center;
   text-align: center;
 }
-
 .btn {
   width: 100%;
   display: flex;
@@ -157,9 +141,9 @@ p {
   height: 40px;
   border-radius: 10px;
 }
-.btn  :hover{
+.btn button:hover {
   color: white;
-background-color: rgba(207, 193, 193, 0.591);
+  background-color: rgba(207, 193, 193, 0.591);
 }
 .btn-2 {
   width: 100%;
@@ -173,12 +157,11 @@ background-color: rgba(207, 193, 193, 0.591);
 .btn-2 button {
   border: none;
   width: 40px;
-
   height: 40px;
   border-radius: 10px;
 }
-.btn-2  :hover{
-background-color: rgba(207, 193, 193, 0.107);
+.btn-2 button:hover {
+  background-color: rgba(207, 193, 193, 0.107);
 }
 .btn-2 button svg{
   align-items: center;
@@ -216,6 +199,14 @@ background-color: rgba(207, 193, 193, 0.107);
   border: 1px solid #ffffff;
   text-align: center;
   padding: 20px;
+}
+.card:hover,
+.skill-card:hover,
+.project-card:hover,
+.blog-card:hover {
+  transform: translateY(-5px);
+  transition: 0.2s ease;
+  border-color: #7c3aed;
 }
 .card p {
   font-size: 14px;
@@ -270,9 +261,7 @@ background-color: rgba(207, 193, 193, 0.107);
   font-weight: bold;
   font-weight: 200px;
   font-size: 11px;
-
   border-radius: 5px;
-
   justify-content: center;
   padding: 5px;
   background-color: #a3a1a1e6;
@@ -280,7 +269,6 @@ background-color: rgba(207, 193, 193, 0.107);
   white-space: nowrap;
 }
 .inner-i:hover{
-
   background-color:white;
 }
 .skill-card h4 {
@@ -317,9 +305,7 @@ background-color: rgba(207, 193, 193, 0.107);
 .Featured-Projects-p {
   text-align: center;
   margin-top: 30px;
-  
 }
-
 section {
   margin-top: 200px;
 }
@@ -350,8 +336,8 @@ section {
 }
 .project-card-inner {
   display: flex;
-  justify-content: space-between; /* pushes left & right apart */
-  align-items: center; /* vertical alignment */
+  justify-content: space-between;
+  align-items: center;
   padding: 15px 20px;
   border-radius: 12px;
 }
@@ -363,13 +349,12 @@ section {
   border: none;
   border-radius: 5px;
   width: 30px;
-  
   padding: 2px;
   padding-top: 5px;
   background-color: #aca9a9;
 }
-.project-btn :hover{  
-  background-color: white
+.project-btn:hover{  
+  background-color: white;
 }
 .small-badges {
   display: flex;
@@ -413,7 +398,10 @@ section {
   margin-right: auto;
   padding: 8px;
 }
-
+.view-all-btn:hover {
+  background-color: #ffffff;
+  color: black;
+}
 .blog-cards {
   display: grid;
   flex-wrap: wrap;
@@ -441,8 +429,8 @@ section {
 }
 .blog-card-inner {
   display: flex;
-  justify-content: space-between; /* pushes left & right apart */
-  align-items: center; /* vertical alignment */
+  justify-content: space-between;
+  align-items: center;
   padding: 15px 20px;
   border-radius: 12px;
 }
@@ -458,7 +446,9 @@ section {
   padding-top: 5px;
   background-color: #aca9a9;
 }
-
+.blog-btn:hover {
+  background-color: white;
+}
 .view-blogs {
   display: flex;
   justify-content: center;
@@ -485,6 +475,17 @@ section {
   margin-bottom: 50px;
   text-align: center;
 }
+.view-blogs-btn{
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 10px;
+  margin:60px auto;
+  gap: 4px;
+  padding: 8px;
+}
+.view-blogs-btn:hover{
+  background-color: #ffffff;
+  color: black;
+}
 .resume {
   border: 1px solid rgb(85, 83, 83);
   margin-left: auto;
@@ -492,34 +493,31 @@ section {
   align-items: center;
   border-radius: 20px;
 }
-.inner-resume
-{
+.inner-resume {
   font-size: 14px;
   text-align: center;
   margin: 50px;
 }
-
-.inner-resume
-p {
+.inner-resume p {
   font-size: 14px;
   text-align: center;
   margin: 50px;
 }
-
 .resume-btn button {
   margin-left: auto;
   margin-right: auto;
   border: none;
-
   border-radius: 5px;
   display: flex;
   text-align: center;
   padding-top: 5px;
   background-color: #f5ebeb;
   padding: 15px;
-
   width: 25%;
   justify-content: center;
+}
+.resume-btn button:hover {
+  background-color: #e0dede;
 }
 .resume-btn button svg {
   padding-right: 1px;
@@ -527,7 +525,7 @@ p {
 .resume-btn button span {
   text-align: center;
   padding: 2px;
-}
+} 
 
 .contact-container{
   
